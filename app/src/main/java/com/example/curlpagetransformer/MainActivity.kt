@@ -7,6 +7,7 @@ import com.example.curlpagetransformer.Data.fetchImages
 import com.example.curlpagetransformer.adapter.VPAdapter
 import com.example.curlpagetransformer.databinding.ActivityMainBinding
 import com.example.curlpagetransformer.viewpagerTransformer.BookFlipPageTransformer
+import com.example.curlpagetransformer.viewpagerTransformer.BookFlipPageTransformer2
 import com.example.curlpagetransformer.viewpagerTransformer.FanTransformation
 import com.example.curlpagetransformer.viewpagerTransformer.GateTransformation
 import com.example.curlpagetransformer.viewpagerTransformer.HingeTransformation
@@ -21,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.mainActVP.adapter = VPAdapter(fetchImages())
-        binding.mainActVP.setPageTransformer(true, BookFlipPageTransformer())
+        binding.mainActVP.setPageTransformer(true, BookFlipPageTransformer2())
 
 
     }
