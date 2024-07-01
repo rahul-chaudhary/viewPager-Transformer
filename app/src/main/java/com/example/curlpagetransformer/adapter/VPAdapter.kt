@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.viewpager.widget.PagerAdapter
 import com.example.curlpagetransformer.R
+import com.example.curlpagetransformer.customView.PageCurlView2
 
 
-class VPAdapter(private val imgList: Array<Int>) : PagerAdapter() {
+class VPAdapter(private val imgList: List<Int>) : PagerAdapter() {
 
     override fun getCount(): Int {
         return imgList.size
@@ -25,11 +26,11 @@ class VPAdapter(private val imgList: Array<Int>) : PagerAdapter() {
         val view = inflater.inflate(R.layout.item_view_pager, container, false)
 
         // Find the ImageView in the inflated layout
-        val imageView: ImageView = view.findViewById(R.id.itemIV)
+        val imageView : PageCurlView2 = view.findViewById(R.id.pageCurlView2)
 
         // Set the image resource for the ImageView
-        imageView.setImageResource(imgList[position])
-
+//        imageView.setImageResource(imgList[position])
+        imageView.setCurlView(imgList.toList())
         // Add the view to the container
         container.addView(view)
 

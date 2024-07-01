@@ -22,11 +22,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        binding.mainActVP.adapter = VPAdapter(fetchImages())
+        //ViewPager Adapter
+        binding.mainActVP.adapter = VPAdapter(fetchFoodImages())
 //        binding.mainActVP.setPageTransformer(true, HingeTransformation())
 
         //PageCurlView2
-        binding.pageCurlView2.setCurlView(fetchFoodImages())
+//        binding.pageCurlView2.setCurlView(fetchFoodImages())
 
 
     }
