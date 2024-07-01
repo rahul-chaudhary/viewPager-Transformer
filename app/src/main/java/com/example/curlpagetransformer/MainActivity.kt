@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
 //        binding.mainActVP.adapter = VPAdapter(fetchImages())
 //        binding.mainActVP.setPageTransformer(true, HingeTransformation())
 
-        //PageCurlView
-        binding.pageCurlView.setCurlView(fetchFoodImages())
+        //PageCurlView2
+        binding.pageCurlView2.setCurlView(fetchFoodImages())
 
 
     }

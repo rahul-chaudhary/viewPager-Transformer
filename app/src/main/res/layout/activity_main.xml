@@ -8,12 +8,10 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
-
-    <com.example.curlpagetransformer.customView.PageCurlView
-        android:id="@+id/pageCurlView"
+    <com.example.curlpagetransformer.customView.PageCurlView2
+        android:id="@+id/pageCurlView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
 <!--    <androidx.viewpager.widget.ViewPager-->
 <!--        android:id="@+id/mainActVP"-->
