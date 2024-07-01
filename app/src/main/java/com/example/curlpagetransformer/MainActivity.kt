@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.mainActVP.adapter = VPAdapter(fetchImages())
-        binding.mainActVP.setPageTransformer(true, BookFlipPageTransformer2())
+        binding.mainActVP.setPageTransformer(true, HingeTransformation())
 
 
     }
