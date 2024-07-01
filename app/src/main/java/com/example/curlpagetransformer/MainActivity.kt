@@ -3,6 +3,7 @@ package com.example.curlpagetransformer
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.viewpager.widget.ViewPager.PageTransformer
 import com.example.curlpagetransformer.Data.fetchImages
 import com.example.curlpagetransformer.adapter.VPAdapter
 import com.example.curlpagetransformer.databinding.ActivityMainBinding
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.mainActVP.adapter = VPAdapter(fetchImages())
-        binding.mainActVP.setPageTransformer(true, BookFlipPageTransformer2())
+//        binding.mainActVP.setPageTransformer(true, BookFlipPageTransformer())
 
 
     }

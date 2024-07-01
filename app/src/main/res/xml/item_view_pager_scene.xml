@@ -6,9 +6,27 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="1000">
+        motion:duration="1000"
+        motion:motionInterpolator="linear">
        <KeyFrameSet>
+           <KeyAttribute
+               motion:motionTarget="@+id/itemIV"
+               motion:framePosition="0"
+               android:translationX="0dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/itemIV"
+               motion:framePosition="100"
+               android:translationX="-420dp" />
+           <KeyAttribute
+               motion:motionTarget="@+id/itemIV"
+               motion:framePosition="0"
+               android:rotationX="0" />
+           <KeyAttribute
+               motion:motionTarget="@+id/itemIV"
+               motion:framePosition="100"
+               android:rotationX="90" />
        </KeyFrameSet>
+        <OnSwipe motion:dragDirection="dragLeft" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
