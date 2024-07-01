@@ -12,4 +12,12 @@ object Data {
             R.drawable.img5,
         )
     }
+
+    fun fetchFoodImages(): List<Int> {
+        return listOf(
+            R.drawable.food1,
+            R.drawable.food2,
+            R.drawable.food3,
+        )
+    }
 }

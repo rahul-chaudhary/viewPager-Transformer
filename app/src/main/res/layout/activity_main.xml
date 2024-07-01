@@ -9,8 +9,14 @@
     tools:context=".MainActivity">
 
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/mainActVP"
+    <com.example.curlpagetransformer.customView.PageCurlView
+        android:id="@+id/pageCurlView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        />
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/mainActVP"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"/>-->
 </androidx.constraintlayout.widget.ConstraintLayout>

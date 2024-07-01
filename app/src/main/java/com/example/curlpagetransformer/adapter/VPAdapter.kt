@@ -1,13 +1,13 @@
 package com.example.curlpagetransformer.adapter
 
-import android.media.Image
+import android.animation.ObjectAnimator
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager.widget.PagerAdapter
 import com.example.curlpagetransformer.R
+
 
 class VPAdapter(private val imgList: Array<Int>) : PagerAdapter() {
 
@@ -32,6 +32,7 @@ class VPAdapter(private val imgList: Array<Int>) : PagerAdapter() {
 
         // Add the view to the container
         container.addView(view)
+
 
         // Return the view as the key object
         return view

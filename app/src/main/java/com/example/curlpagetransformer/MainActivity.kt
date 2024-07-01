@@ -3,6 +3,7 @@ package com.example.curlpagetransformer
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.example.curlpagetransformer.Data.fetchFoodImages
 import com.example.curlpagetransformer.Data.fetchImages
 import com.example.curlpagetransformer.adapter.VPAdapter
 import com.example.curlpagetransformer.databinding.ActivityMainBinding
@@ -21,8 +22,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.mainActVP.adapter = VPAdapter(fetchImages())
-        binding.mainActVP.setPageTransformer(true, HingeTransformation())
+//        binding.mainActVP.adapter = VPAdapter(fetchImages())
+//        binding.mainActVP.setPageTransformer(true, HingeTransformation())
+
+        //PageCurlView
+        binding.pageCurlView.setCurlView(fetchFoodImages())
 
 
     }
